@@ -15,25 +15,26 @@ function selectAttributres(){
   }
 }
 function generateCharacters(){
-  var attributes = selectAttributes()
+  var attribues = selectAttributres()
   var upper = ['ABCDEFGHIJKLMNOPQRSTUVWXYZ']
   var lower = ['abcdefghijklmnopqrstuvwxyz']
   var num =['1234567890']
   var special = ['!\'\"#$%&()*+,-./:<>=?@`|{}~\]']
   var valueSelected = ''
 
-  if (attributes.ifUpper){
+  if(attribues.ifUpper){
     valueSelected += upper
   }
-  if (attributes.ifLower){
+  if(attribues.ifLower){
     valueSelected += lower
   }
-  if (attributes.ifNum){
+  if (attribues.ifNum){
     valueSelected += num
   }
-  if (attributes.ifSpecial){
+  if(attribues.ifSpecial){
     valueSelected += special
   }
+
   return valueSelected
 
   }
